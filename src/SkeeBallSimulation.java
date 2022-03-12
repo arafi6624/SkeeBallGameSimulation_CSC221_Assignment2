@@ -109,12 +109,12 @@ public class SkeeBallSimulation {
     public static void main(String[] args) {
         Scanner keyboard = new Scanner(System.in); // A Scanner class object is created to take in user input from the command line.
 
-        System.out.printf("Enter the number of plays (1-10): "); // Prints the prompt for the user to enter the number of plays for the game.
+        System.out.print("Enter the number of plays (1-10): "); // Prints the prompt for the user to enter the number of plays for the game.
         int numPlays = keyboard.nextInt(); // Sets numPlays equal to the user input.
 
         while (numPlays < 0 || numPlays > MAX_PLAYS){ // The user is prompted repeatedly for another input if numPlays is less than 0 or greater than 10.
             System.out.println("Invalid input. Please enter a number between 1 and 10."); // Prints the invalid input prompt.
-            System.out.printf("Enter the number of plays (1-10): "); // Prints the prompt for the user to enter the number of plays for the game.
+            System.out.print("Enter the number of plays (1-10): "); // Prints the prompt for the user to enter the number of plays for the game.
             numPlays = keyboard.nextInt(); // Sets numPlays equal to the user input.
         }
         keyboard.close(); // The Scanner object keyboard is closed.
